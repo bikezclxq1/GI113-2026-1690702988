@@ -53,8 +53,8 @@ namespace Lab02
             string player1 = "EREN";
             char rank1 = 'S';
             int maxHp1 = 100;
-            float damage1 = 25.00f;
-            double speed1 = 20;
+            float damage1 = 35.00f;
+            double speed1 = 35;
             bool isHandsome1 = true;
             Console.WriteLine($"Name: {player1}");
             Console.WriteLine($"Rank: {rank1}");
@@ -83,12 +83,12 @@ namespace Lab02
             int maxHp3 = 100;
             float damage3 = 30.00f;
             double speed3 = 30;
-            bool isHandsome3 = false;
-            Console.WriteLine($"Name: {player2}");
-            Console.WriteLine($"Rank: {rank2}");
-            Console.WriteLine($"Hp: {maxHp2}");
-            Console.WriteLine($"Damage: {damage2}");
-            Console.WriteLine($"Speed : {speed2}");
+            bool isHandsome3 = true;
+            Console.WriteLine($"Name: {player3}");
+            Console.WriteLine($"Rank: {rank3}");
+            Console.WriteLine($"Hp: {maxHp3}");
+            Console.WriteLine($"Damage: {damage3}");
+            Console.WriteLine($"Speed : {speed3}");
             Console.WriteLine($"Handsome: {isHandsome3}");
 
             Console.WriteLine(" ## PLAYER 4 : MIKASA ## ");
