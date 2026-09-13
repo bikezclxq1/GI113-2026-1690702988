@@ -19,14 +19,14 @@ namespace Assignment1
             Console.WriteLine("+================================================================+");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("=..:..-+..=:==.:+:.:+-::-:.--.-@@@@@@@@@@@@@@@@@@@@@@      \r\n=-:.#..:+-.=.#:+.:--.-:-:.--.+@..*@@@@@@@@@@@@@@@@@@@      \r\n=-.::=.::=:.=.++:-.*-:.=--:.---#@@@@@@@@@@@@@@@@@@@@@      \r\n--:..=-.:--.=-.+==::++:.==.--.+.#@@@@@@@@@@@@@@@@@@@@      \r\n--+.:+-::.:=-:--:=:=:=-*==-::#=..#@@@@@@@@@@@@@@@@@@@      \r\n-=+-.=.*: +::*#:*#%##+*-+==-:#@@*--@@@@@@@@@@@@@@@@@@      \r\n--+.--.*=.*.--.-*=-..*#.=+=-+.@@@@@@%@@@@@@@@@@@@@@@@      \r\n-:+.-: *=.+:#-.+*--=+#-:-+=::*-@@@@@@@@@@@@@@@@@@@@@@      \r\n-.+*...*=:+-=-=***+==*-:..*..=%@@@@@@@@@@@@@@@@@@@@@@      \r\n+.=:.::+=--=+*.=. ..   : .+.    ...+@@@@@@@@@@@@@@@@@      \r\n+:*:-:--==--*==:       . :.    .:.=@@@@@@@@@@@@@@@*.-      \r\n=**==:=.*.=-+=-=.                =@@@@@@@@@@@*:.:*@@@      \r\n:++====:*..-*-=.-.                ..@@@@%-..*@@@@@@@@      \r\n:.*---=*==.--.:-..=..          ..--++..+@@@@@@@@@@@@@      \r\n:..--=+==.:=-:.=::. .:.      ..+=--%@@@@@@@@@@@@@@@@@      \r\n=:.....--=...*.....               .*@@@@@@@@@@@@@@@@@      \r\n.-..+-:-+.=:  .=.                 -@@@@@@@@@@@@@@@@@@      \r\n-:: -==-..-:..                    .%@@@@@@@@@@@@@@@@@      \r\n.+:-:-.:-..::.:-:..                :@@@@@@@@@@@@@@@@@      \r\n::*-.=.:::.....::::::.::::::--=:...%@@@@@@@@@@@@@@@@@      \r\n=---:::. .:.   ....:.:::.:=*%@@@@@@@@@@@@@@@@@@@@@@@@      \r\n:=::.-=.  ..     ..:.:...%@@@@@@@@@@@@@@@@@@@@@@@@@@@      \r\n+:===..-..  .-.      .:...@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            Console.WriteLine("      =..:..-+..=:==.:+:.:+-::-:.--.-@@@@@@@@@@@@@@@@@@@@@@      \r\n      =-:.#..:+-.=.#:+.:--.-:-:.--.+@..*@@@@@@@@@@@@@@@@@@@      \r\n      =-.::=.::=:.=.++:-.*-:.=--:.---#@@@@@@@@@@@@@@@@@@@@@      \r\n      --:..=-.:--.=-.+==::++:.==.--.+.#@@@@@@@@@@@@@@@@@@@@      \r\n      --+.:+-::.:=-:--:=:=:=-*==-::#=..#@@@@@@@@@@@@@@@@@@@      \r\n      -=+-.=.*: +::*#:*#%##+*-+==-:#@@*--@@@@@@@@@@@@@@@@@@      \r\n      --+.--.*=.*.--.-*=-..*#.=+=-+.@@@@@@%@@@@@@@@@@@@@@@@      \r\n      -:+.-: *=.+:#-.+*--=+#-:-+=::*-@@@@@@@@@@@@@@@@@@@@@@      \r\n      -.+*...*=:+-=-=***+==*-:..*..=%@@@@@@@@@@@@@@@@@@@@@@      \r\n      +.=:.::+=--=+*.=. ..   : .+.    ...+@@@@@@@@@@@@@@@@@      \r\n      +:*:-:--==--*==:       . :.    .:.=@@@@@@@@@@@@@@@*.-      \r\n      =**==:=.*.=-+=-=.                =@@@@@@@@@@@*:.:*@@@      \r\n      :++====:*..-*-=.-.                ..@@@@%-..*@@@@@@@@      \r\n      :.*---=*==.--.:-..=..          ..--++..+@@@@@@@@@@@@@      \r\n      :..--=+==.:=-:.=::. .:.      ..+=--%@@@@@@@@@@@@@@@@@      \r\n      =:.....--=...*.....               .*@@@@@@@@@@@@@@@@@      \r\n      .-..+-:-+.=:  .=.                 -@@@@@@@@@@@@@@@@@@      \r\n      -:: -==-..-:..                    .%@@@@@@@@@@@@@@@@@      \r\n      .+:-:-.:-..::.:-:..                :@@@@@@@@@@@@@@@@@      \r\n      ::*-.=.:::.....::::::.::::::--=:...%@@@@@@@@@@@@@@@@@      \r\n      =---:::. .:.   ....:.:::.:=*%@@@@@@@@@@@@@@@@@@@@@@@@      \r\n      :=::.-=.  ..     ..:.:...%@@@@@@@@@@@@@@@@@@@@@@@@@@@      \r\n      +:===..-..  .-.      .:...@@@@@@@@@@@@@@@@@@@@@@@@@@@");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("+================================================================+");
 
 
 
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             const string GameTitle = " BORN TO WIN ";
 
             var hunterName = "Miffy";
@@ -36,33 +36,33 @@ namespace Assignment1
             float moveSpeed = 22.9f;
             bool isGender = true;
 
-            Console.WriteLine("+===============================+");
-            Console.WriteLine($"|        {GameTitle}          |");
-            Console.WriteLine("+===============================+");
-            Console.WriteLine($"|        HUNTER PROFILE         |");
-            Console.WriteLine("+===============================+");
-            Console.WriteLine($"| Name : {hunterName}                  |");
-            Console.WriteLine($"| Tier : {hunterTier}                      |");
-            Console.WriteLine($"| Age : {hunterAge}                       |");
-            Console.WriteLine($"| Power : {hunterPower}                  |");
-            Console.WriteLine($"| Speed : {moveSpeed}                  |");
-            Console.WriteLine($"| Male : {isGender}                   | ");
-            Console.WriteLine("+===============================+");
+            Console.WriteLine("+================================================================+");
+            Console.WriteLine($"|                        {GameTitle}                           |");
+            Console.WriteLine("+================================================================+");
+            Console.WriteLine($"|                        HUNTER PROFILE                          |");
+            Console.WriteLine("+================================================================+");
+            Console.WriteLine($"|      Name : {hunterName}                                              |");
+            Console.WriteLine($"|      Tier : {hunterTier}                                                  |");
+            Console.WriteLine($"|      Age : {hunterAge}                                                   |");
+            Console.WriteLine($"|      Power : {hunterPower}                                              |");
+            Console.WriteLine($"|      Speed : {moveSpeed}                                              |");
+            Console.WriteLine($"|      Male : {isGender}                                               | ");
+            Console.WriteLine("+================================================================+");
 
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("+===============================+");
-            Console.WriteLine($"|        CONVERSION TEST        |");
-            Console.WriteLine("+===============================+");
-            Console.WriteLine("+===============================+");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("+================================================================+");
+            Console.WriteLine($"|                       CONVERSION TEST                          |");
+            Console.WriteLine("+================================================================+");
+            Console.WriteLine("+================================================================+");
             double hunterAgeAsDouble = hunterAge; // implicit
-            Console.WriteLine($"| Age as double (implicit) : {hunterAgeAsDouble}  |");
+            Console.WriteLine($"|      Age as double (implicit) : {hunterAgeAsDouble}                              |");
 
        
             int speedTruncated = (int)moveSpeed; // explicit
             int speedRounded = Convert.ToInt32(moveSpeed); // convert
-            Console.WriteLine($"| Speed cast : {speedTruncated}               |");
-            Console.WriteLine($"| Speed convert : {speedRounded}            |");
-            Console.WriteLine("+===============================+");
+            Console.WriteLine($"|      Speed cast : {speedTruncated}                                           |");
+            Console.WriteLine($"|      Speed convert : {speedRounded}                                        |");
+            Console.WriteLine("+================================================================+");
         }
     }
 }
