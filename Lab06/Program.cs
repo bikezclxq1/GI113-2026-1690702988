@@ -97,39 +97,43 @@ namespace Lab06
 
             int AckermanHp = 200;
             int AckermanSpeed = 25;
-            int TitanHp = 200;
+            int TitanHp = 400;
             int AckermanAttack = 100;
             int SpeedboostPotion = 10;
             int KnifeDoubleDamage = 200;
+            int AddarmorHp = 50;
 
-            Console.WriteLine("");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\r\n      :##=.                                                 .......:-+.                            \r\n    ...+@@@@+:.      ..                :*:                 .+@@@@@@@%:..                           \r\n      :+@* :@@. .:  :@#                #@:                .:. :#@=  =@.   ..         .. :=.        \r\n      :+@*  @@.-@*  -@#  :#@@@%: :#@@%-#@%@@*:.               -#@= .+#-.-@#. .+@@@@--@@*%@@#.      \r\n      :+@@%%@@-#@%###@@#=  ..#@::@#.::.#@:=#-.   :#@*=%*@*.   -#@= .#@-+%@@#*. ..+@- *@- *@-       \r\n      :+@*  @@.-@#  -@# .+%@@@@::@#    #@%%@%    @:##.@:=#    -#@=  *@- :@#. :%%@@@- *@- *@-       \r\n      :+@*  @@.-@#  -@# -@*..@@::@#    #@::@%    @:##.@:=#    -#@=  *@- :@#. *@-.*@- *@- *@-       \r\n      :+@*.*@@+-@#  +@@=+@@@@@@%*@@%+=.%@-:@%  ..=@+.-%-+%:   -#@=.:@@#.:@#.-@@@@@@@*@@@-%@@%+.    \r\n      :+@*  ...+@@#++-.   .:.... .-+...--..@@+:               -#@#-.:. .+@@%*:.:...   .  ..:.      \r\n    .:*@%-      .:+.                 ..    .-.                ..-*#:      :-.                      \r\n                                    .*+%#%=+@+@*+:...#@#@@%. :*.                                   \r\n                                    =%%@%#-*@*%%*#@%%*%#%@+ .+%:                                   \r\n                                     ++%#%*=#%##+*@:@%#*##-.=*-#:.                                 \r\n                                    .+:=++=.=*-:::.=.**==+*+=..:+:                                 \r\n                ");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("+==================================+");
-            Console.WriteLine($"|       + ATTACK ON TITAN +        |");
-            Console.WriteLine($"|      The victry Of Humanity      | ");
+            Console.WriteLine($"|     + Shingeki no Kyojin +      |");
+            Console.WriteLine($"|     The Victory Of Humanity     | ");
             Console.WriteLine("+==================================+");
 
             Console.WriteLine("  ");
 
             Console.WriteLine("+=================================+");
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("STEP 1 : ATTACK TITAN ");
             Console.WriteLine("STEP 2 : DRINK SPEEDBOOST POTION  ");
-            Console.WriteLine("STEP 3 : USE KNIFE DOUBLE DAMAGE  ");
+            Console.WriteLine("STEP 3 : USE A KNIFE DOUBLE DAMAGE  ");
+            Console.WriteLine("STEP 4 : SWAP BLOOD FOR AN ARMOR  ");
+            Console.WriteLine("STEP 5 : GO TO WAYPOINT  ");
+            Console.WriteLine("STEP 6 : GO TO SPAWN  ");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("+=================================+");
 
             Console.WriteLine("  ");
 
-            Console.WriteLine("Ackerman --> Choose your step (1-3): ");
+            Console.WriteLine("Ackerman --> Choose your step (1-6): ");
             bool UserInput = int.TryParse(Console.ReadLine(), out int step);
 
-            if (!UserInput || step < 1 || step > 3)
+            if (!UserInput || step < 1 || step > 6)
             {
-                if (step < 1 || step > 3)
+                if (step < 1 || step > 6)
                 {
-                    Console.WriteLine("Ackerman choose your step 1-3");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Input, pls try again, choose your step 1-3 only ^_^");
+                    Console.WriteLine("Invalid Input, pls try again, choose your step 1-6 only :( ");
                 }
             }
             else if (step == 1)
@@ -147,12 +151,25 @@ namespace Lab06
             else if (step == 2)
             {
                 AckermanSpeed += SpeedboostPotion;
-                Console.WriteLine($"Ackerman drink speedboost potion, Ackerman Speed boost to {AckermanSpeed}");
+                Console.WriteLine($"Ackerman drink speedboost potion, Ackerman speed boost from 25 to {AckermanSpeed}");
             }
             else if (step == 3)
             {
                 TitanHp -= KnifeDoubleDamage;
-                Console.WriteLine($"Ackerman attack damage X2 , titan is defeated!");
+                Console.WriteLine($"Ackerman attack damage X2 , titan hp left {TitanHp}");
+            }
+            else if (step == 4)
+            {
+                AckermanHp -= AddarmorHp;
+                Console.WriteLine($"Ackerman swap blood for an armor, Ackerman lost hp from 200 to {AckermanHp}, Added 20% armor.");
+            }
+            else if (step == 5)
+            {
+                Console.WriteLine("Ackerman goes to waypoint.");
+            }
+            else if (step == 6)
+            {
+                Console.WriteLine("Ackerman goes to spawn.");
             }
         }
     }
